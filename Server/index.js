@@ -4,6 +4,7 @@ import cors from 'cors';
 import * as dotenv from "dotenv";
 import authRoutes from "./routes/auth.js";
 import utilRoutes from "./routes/util.js";
+import generatePlanRoute from "./routes/gPlan.js";
 
 const app = express();
 
@@ -13,6 +14,7 @@ dotenv.config();
 
 app.use("/api/auth", authRoutes); 
 app.use("/api/util", utilRoutes);
+app.use("/api/gplan", generatePlanRoute);
 
 
 mongoose.set("strictQuery",false);
