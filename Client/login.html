@@ -88,7 +88,7 @@
 					<h2>Login form</h2>
 				</div>
 				<div class="card-body">
-					<form action="login.php" method="post">
+					<form>
 						<div class="form-group" style="padding: 5px;">
 							<label for="email">Email</label>
 							<input type="email" id="email" class="form-control" name="email" />
@@ -98,7 +98,7 @@
 							<input type="password" id="password" class="form-control" name="password" />
 						</div>
 						<div style="padding: 5px;">
-						<input type="submit" class="btn btn-primary w-100" value="Login" name="">
+						<button id = "jsButtonSubmit" type="submit" class="btn btn-primary w-100" value="Login" name="">Login</button>
 						</div>
 					</form>
 					<form action="./registration.html" style="padding: 5px;">
@@ -191,6 +191,7 @@
 <script src="js/magnific-popup-options.js"></script>
 <!-- Main -->
 <script src="js/main.js"></script>
+<script src="./js/main/login.js"  type="module"></script>
 
 
 
