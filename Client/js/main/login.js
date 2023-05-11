@@ -13,7 +13,7 @@ submit.addEventListener('click', async e => {
                 email,
                 password,
             });
-            console.log(response);
+            localStorage.setItem('cookie',response.data.email);            
         } catch (error) {
             console.log(error);
         }

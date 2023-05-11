@@ -54,10 +54,7 @@ export const login = async (req, res, next) => {
   	}
   	res.status(200).json({message:"Success",email});
   } catch (err) {
-  	if (!err.statusCode) {
-  		err.statusCode = 500;
-  	}
-  	next(err);
+    console.log(err);
   }
 };
 
