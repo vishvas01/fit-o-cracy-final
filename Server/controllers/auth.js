@@ -38,7 +38,6 @@ export const signup = async (req, res) => {
 export const login = async (req, res, next) => {
   const email = req.body.email;
   const password = req.body.password;
-  
   let loadedUser;
   try {
   	const user = await User.findOne({ email: email });
@@ -48,31 +47,12 @@ export const login = async (req, res, next) => {
   		throw error;
   	}
   	loadedUser = user;
-  	const isEqual = await bcrypt.compare(password, user.password);
-  	if (!isEqual) {
+  	if (loadedUser.password !== password) {
   		const error = new Error('Wrong password!');
   		error.statusCode = 401;
   		throw error;
   	}
-  	const token = jwt.sign(
-  		{
-  			email: loadedUser.email,
-  			name:loadedUser.name,
-  			userId: loadedUser._id.toString(),
-  		},
-  		process.env.JWT_KEY,
-  		{ expiresIn: '1h' }
-  	);
-  	// console.log('The token', token);
-  	res.setHeader('Set-Cookie',cookie.serialize('jwt',token,{
-  		httpOnly:false,
-  		domain:'http://localhost:5173/',
-  		'path':'/'
-  	}))
-  	req.session = {
-  		jwt: token,
-  	};
-  	res.status(200).json({ token: token, userId: loadedUser._id.toString(),name:loadedUser.name });
+  	res.status(200).json({message:"Success",email});
   } catch (err) {
   	if (!err.statusCode) {
   		err.statusCode = 500;

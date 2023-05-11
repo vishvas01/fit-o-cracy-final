@@ -7,8 +7,9 @@ submit.addEventListener('click', async e => {
         e.preventDefault();
 		const email = document.getElementById('email').value;
 		const password = document.getElementById('password').value;
+        console.log(email,password);
         try {
-            const response = await axios.post(backendUrl + '/api/auth/signup', {
+            const response = await axios.post(backendUrl + '/api/auth/login', {
                 email,
                 password,
             });
