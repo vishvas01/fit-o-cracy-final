@@ -13,7 +13,8 @@ submit.addEventListener('click', async e => {
                 email,
                 password,
             });
-            localStorage.setItem('cookie',response.data.email);            
+            localStorage.setItem('cookie',response.data.email);    
+            window.location.href = "../../index.html";        
         } catch (error) {
             console.log(error);
         }

@@ -30,7 +30,7 @@ submit.addEventListener('click', async e => {
                 gender,
             });
             console.log(response);
-            // window.location.href = '/src/views/signin.html';
+            window.location.href = "../../login.html";
         } catch (error) {
             console.log(error);
         }
