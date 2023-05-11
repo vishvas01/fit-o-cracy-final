@@ -1,11 +1,11 @@
 import express from 'express';
-import { test } from '../controllers/test.js';
+import { bmi } from '../controllers/util.js';
 const router = express.Router();
 
 // signup == register
-router.get(
-	'/',
-	test
+router.post(
+	'/bmi',
+	bmi
 );
 
 export default router;

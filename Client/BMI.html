@@ -125,16 +125,16 @@ document.techBMI.meaning.value = "we would recommend to contact doctor"
 <form name="techBMI">
 <h3 class="col-md-12" style="background-color: lightgray">BMI Calculator</h3>
 <p class="col-md-7"><br/>
-  <input type="text" name="weight" placeholder="Enter Weight (kg)" size="20">
+  <input id="weightJS" type="text" name="weight" placeholder="Enter Weight (kg)" size="20">
   <br /><br/>
-  <input type="text" name="height" placeholder="Enter Height (Meters)" size="10">
+  <input id="heightJS" type="text" name="height" placeholder="Enter Height (Meters)" size="10">
 </p>
 <p class="col-md-7"><br/>
-  <input class="decoration-one px-3 py-2"style="background-color: orange;color: black" type="button" value="Calculate BMI" onClick="calculateBmi()"><br /><br/>
+  <button id="calculateJS" class="decoration-one px-3 py-2" style="background-color: orange;color: black" type="button" value="Calculate BMI" onClick="calculateBmi()">Calculate BMI</button><br /><br/>
   <input type="text" name="bmi" placeholder="Your BMI Will be here" size="20"><br /><br/>
   <input type="text" name="meaning" size="35">
   <br /><br/>
-  <input class="decoration-one px-3 py-2"style="background-color: orange;color: black" type="reset" value="Reset" />
+  <input class="decoration-one px-3 py-2" style="background-color: orange;color: black" type="reset" value="Reset" />
   <br/>
 </p>
 <img src="images/New Project.png" alt="" width="457" height="374" align="top"/>
@@ -224,6 +224,7 @@ document.techBMI.meaning.value = "we would recommend to contact doctor"
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<script src="./js/main/bmi.js" type="module"></script>
 
 	
 

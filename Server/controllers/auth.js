@@ -29,6 +29,7 @@ export const signup = async (req, res) => {
       gender,
     });
     const result = await user.save();
+    console.log(result);
     res.status(201).json({ message: "User created!", userId: result._id });
   } catch (err) {
     console.log(err.message);
@@ -52,6 +53,7 @@ export const login = async (req, res, next) => {
   		error.statusCode = 401;
   		throw error;
   	}
+    console.log('Logged In');
   	res.status(200).json({message:"Success",email});
   } catch (err) {
     console.log(err);

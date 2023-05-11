@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import cors from 'cors';
 import * as dotenv from "dotenv";
 import authRoutes from "./routes/auth.js";
+import utilRoutes from "./routes/util.js";
 
 const app = express();
 
@@ -10,7 +11,8 @@ app.use(express.json());
 app.use(cors());
 dotenv.config();
 
-app.use("/api/auth", authRoutes);
+app.use("/api/auth", authRoutes); 
+app.use("/api/util", utilRoutes);
 
 
 mongoose.set("strictQuery",false);
