@@ -1,45 +1,141 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Generate Plan</title>
-  	
-	<style>
-		body {
-		  font-family: Arial, sans-serif;
-		}
-	
-		form {
-		  max-width: 500px;
-		  margin: 0 auto;
-		}
-	
-		label {
-		  display: block;
-		  margin-bottom: 10px;
-		  font-weight: bold;
-		}
-	
-		input[type="text"] {
-		  width: 100%;
-		  padding: 5px;
-		  margin-bottom: 15px;
-		}
-	
-		input[type="submit"] {
-		  background-color: #4CAF50;
-		  color: white;
-		  padding: 10px 20px;
-		  border: none;
-		  border-radius: 4px;
-		  cursor: pointer;
-		}
-	
-		input[type="submit"]:hover {
-		  background-color: #45a049;
-		}
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FIT-O-CRACY </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+  
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+  
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+  
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .form_part{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      h1{
+        text-align: center;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+    
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .planEmpty {
+        margin: 100px 300px;
+        padding-left: 15px;
+        background: #dadada;
+      }
+
+      #planResult {
+        margin: 0px 0px;
+        font-size: large;
+        font-weight: bold;
+      }
+    
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+    
+      input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+      }
+    
+      input[type="submit"] {
+        background-color: #ff7300;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        
+      }
+    
+      input[type="submit"]:hover {
+        background-color: #ff7300;
+      }
+
+      
 	  </style>
-</head>
+    </head>
 <body>
+  <div id="page">
+    <nav class="fh5co-nav" role="navigation">
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-right">
+              <p class="num">Call: +91 1234567890&nbsp; &nbsp;</p>
+              <ul class="fh5co-social">
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-menu" style="border-bottom: 5px solid ;box-shadow: 0px 3px 10px 1px #888888;">
+        <div class="container">
+          <div class="row">
+            <div>
+              <div id="fh5co-logo"><a href="index.html" >Fit-o-Cracy<span>.</span></a></div>
+              <ul>
+                <li class="active"></li>
+              </ul>
+                      </div>
+            <div class="col-xs-10 text-right menu-1 col-sm-12">
+              <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="BMI.html">BodyMassIndex</a></li>
+                <li class="has-dropdown"> <a href="diet-plan.html">diet-plan</a>
+                  <ul class="dropdown">
+                    <li><a href="diet-plan - Loss.html">Weight Loss</a></li>
+                    <li><a href="diet-plan - Gain.html">Weight Gain</a></li>
+                    </ul>
+                  </li>
+                <li><a href="contact.html">Contact</a></li>
+              <li><a href="generatePlan.html">AI Plan</a></li>
+              <li class="active"><a  id="loginTextJS"  href="login.html">Login</a></li>
+                </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </nav> 
+
+    <div class = "form_part">
   <h1>Generate Plan</h1>
   <form id="planForm">
     <label for="tags">Enter your information</label>
@@ -86,7 +182,132 @@
 
     <input type="submit" value="Generate Plan">
 </form>
-<div id="planResult"></div>
+</div>
+<div>
+  <div class="planEmpty">
+    <div id="planResult">
+      <!-- Diet Plan<br><br> -->
+
+      <!-- Meal Plan:<br>
+<br>
+Breakfast:<br>
+
+    Whole-wheat toast with peanut butter and banana slices<br>
+    Oatmeal with nuts and berries<br>
+    Greek yogurt with granola and honey<br>
+    <br>
+
+Lunch:<br>
+
+    Veggie wrap with hummus<br>
+    Quinoa bowl with grilled chicken and vegetables<br>
+    Salad with grilled salmon and avocado<br>
+    <br>
+
+Dinner:<br>
+
+    Grilled chicken with roasted potatoes and vegetables<br>
+    Stir-fry with tempeh and vegetables<br>
+    Veggie burger with sweet potato fries<br>
+    <br>
+
+Snacks:<br>
+
+    Fruit and nut bars<br>
+    Trail mix<br>
+    Greek yogurt with berries<br>
+    <br>
+
+Exercise Plan<br>
+<br>
+Workout A (Monday, Wednesday, Friday):<br>
+<br>
+Warm-up: 5 minutes of dynamic stretching<br>
+<br>
+Strength Training:<br>
+3 sets of 10 reps of:<br>
+
+    Squats<br>
+    Lunges<br>
+    Push-ups<br>
+    Plank<br>
+    <br>
+
+Cardio:<br>
+30 minutes of steady-state cardio, such as jogging, biking, or using the elliptical<br>
+<br>
+Cool-down: 5 minutes of static stretching<br>
+<br>
+Workout B (Tuesday, Thursday):<br>
+<br>
+Warm-up: 5 minutes of dynamic stretching<br>
+<br>
+HIIT:<br>
+30 minutes of high-intensity interval training (HIIT). Examples of HIIT exercises include:<br>
+
+    Jumping jacks<br>
+    Burpees<br>
+    Mountain climbers<br>
+    Sprints<br>
+    <br>
+
+Cool-down: 5 minutes of static stretching<br></div> -->
+</div>
+  </div>
+</div>
   <script src="./js/main/gPlan.js"  type="module"></script>
+  <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/img_bg_1.jpg);" role="contentinfo">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row row-pb-md">
+        <div class="col-md-4 fh5co-widget">
+          <h3>A Little About fit-o-cracy</h3>
+          <p>Sticking to a regular exercise schedule isn't easy. After all, there are plenty of potential hindrances — time, boredom, injuries, self-confidence. But these issues don't need to stand in your way.</p>
+          <p><a class="btn btn-primary" href="./registration.html">SIGN UP</a></p>
+        </div>
+        <div class="col-md-8">
+          <h3>&nbsp;helpful links</h3>
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <ul class="fh5co-footer-links">
+              <li><a href="#">Cardio</a></li>
+              <li><a href="#"> Weight training</a></li>
+              <li><a href="#">Yoga</a></li>
+              <li><a href="#">Running</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <ul class="fh5co-footer-links">
+              <li><a href="diet-plan.html">Diet-plan</a></li>
+              <li><a href="BMI.html">BMI-calculator</a></li>
+              <li>&nbsp;</li>
+            </ul>
+          </div>
+  
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <ul class="fh5co-footer-links">
+              <li><a href="#">Tips</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Feedback</a></li>
+              <li>&nbsp;</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row copyright">
+        <div class="col-md-12 text-center">
+          <p><small class="block">made by team <span style="color: #EAE9E9">FIT-O-CRACY</span></small>
+          </p>
+          <p>
+            <ul class="fh5co-social-icons">
+              
+            </ul>
+          </p>
+        </div>
+      </div>
+  
+    </div>
+  </footer>
 </body>
 </html>

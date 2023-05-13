@@ -21,4 +21,3 @@ document.getElementById('planForm').addEventListener('submit',async function(eve
       console.log(error);      
     }
   });
-  

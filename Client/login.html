@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -28,173 +29,238 @@
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 
+	<style>
+		.container {
+			width: fit-content;
+			margin: 0 auto;
+			padding-top: 30px;
+		}
+		
+		.login_form {
+			background: #F85A16;
+			padding: 10px;
+			color: white;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 30px;
+   		}
+		
+		h1 {
+			margin: 0;
+			text-align: center;
+			color: white;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+		}
+
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input[type="text"] {
+			width: 100%;
+			padding: 5px;
+			margin-bottom: 15px;
+		}
+
+		input[type="submit"] {
+			background-color: #F85A16;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #F85A16;
+		}
+		.rest_page{
+			margin-top: 20px;
+		}
+
+		.rest_page h1{
+			border: 2px solid black;
+		}
+	</style>
 </head>
+
 <body>
 
-	<div id="page" >
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top">
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-right">
+							<p class="num">Call: +91 1234567890&nbsp; &nbsp;</p>
+							<ul class="fh5co-social">
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top-menu" style="border-bottom: 5px solid ;box-shadow: 0px 3px 10px 1px #888888;">
+				<div class="container">
+					<div class="row">
+						<div>
+							<div id="fh5co-logo"><a href="index.html">Fit-o-Cracy<span>.</span></a></div>
+							<ul>
+								<li class="active"></li>
+							</ul>
+						</div>
+						<div class="col-xs-10 text-right menu-1 col-sm-12">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="BMI.html">BodyMassIndex</a></li>
+								<li class="has-dropdown"> <a href="diet-plan.html">diet-plan</a>
+									<ul class="dropdown">
+										<li><a href="diet-plan - Loss.html">Weight Loss</a></li>
+										<li><a href="diet-plan - Gain.html">Weight Gain</a></li>
+									</ul>
+								</li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="generatePlan.html">AI Plan</a></li>
+								<li class="active"><a id="loginTextJS" href="login.html">Login</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+
+
+		<div >
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 text-right">
-						<p class="num">Call: +91 1234567890&nbsp; &nbsp;</p>
-						<ul class="fh5co-social">
-						 
+				<div class="login_form">
+				  <h1>Login</h1>
+				</div>
+				<!-- rest of the form code -->
+			  </div>
+			<div class="card-body">
+				<form>
+					<div class="form-group" style="padding: 5px;">
+						<label for="email">Email</label>
+						<input type="email" id="email" class="form-control" name="email" />
+					</div>
+					<div class="form-group" style="padding: 5px;">
+						<label for="password">Password</label>
+						<input type="password" id="password" class="form-control" name="password" />
+					</div>
+					<div style="padding: 5px;">
+						<button id="jsButtonSubmit" type="submit" class="btn btn-primary w-100" value="Login"
+							name="">Login</button>
+					</div>
+				</form>
+				<form action="./registration.html" style="padding: 5px;">
+					<label for="registration">Don't have an account?</label>
+					<button type="submit"
+						style="background-color: transparent; border: none; color: rgb(48, 149, 212);">Register</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<br /><br /><br /><br /><br />
+
+	<footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/img_bg_1.jpg);" role="contentinfo">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-4 fh5co-widget">
+					<h3>A Little About fit-o-cracy</h3>
+					<p>Sticking to a regular exercise schedule isn't easy. After all, there are plenty of potential
+						hindrances — time, boredom, injuries, self-confidence. But these issues don't need to stand in
+						your way.</p>
+					<p><a class="btn btn-primary" href="./registration.html">SIGN UP</a></p>
+				</div>
+				<div class="col-md-8">
+					<h3>&nbsp;helpful links</h3>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<ul class="fh5co-footer-links">
+							<li><a href="#">Cardio</a></li>
+							<li><a href="#"> Weight training</a></li>
+							<li><a href="#">Yoga</a></li>
+							<li><a href="#">Running</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<ul class="fh5co-footer-links">
+							<li><a href="diet-plan.html">Diet-plan</a></li>
+							<li><a href="BMI.html">BMI-calculator</a></li>
+							<li>&nbsp;</li>
+						</ul>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<ul class="fh5co-footer-links">
+							<li><a href="#">Tips</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Feedback</a></li>
+							<li>&nbsp;</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="top-menu" style="border-bottom: 5px solid ;box-shadow: 0px 3px 10px 1px #888888;">
-			<div class="container">
-				<div class="row">
-					<div>
-					  <div id="fh5co-logo"><a href="index.html" >Fit-o-Cracy<span>.</span></a></div>
-						<ul>
-						  <li class="active"></li>
-					  </ul>
-                    </div>
-					<div class="col-xs-10 text-right menu-1 col-sm-12">
-					  <ul>
-					    <li ><a href="index.html">Home</a></li>
-					    <li><a href="blog.html">Blog</a></li>
-					    <li><a href="BMI.html">BodyMassIndex</a></li>
-					    <li class="has-dropdown"> <a href="diet-plan.html">diet-plan</a>
-					      <ul class="dropdown">
-					        <li><a href="diet-plan - Loss.html">Weight Loss</a></li>
-					        <li><a href="diet-plan - Gain.html">Weight Gain</a></li>
-				          </ul>
-				        </li>
-					    <li><a href="contact.html">Contact</a></li>
-						<li class="active"><a  id="loginTextJS"  href="login.html">Login</a></li>
-				      </ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
 
-
-	<div class="container" style=" 
-	border: 1px solid #3a3a3a62;
-	margin: 175px;
-	align-content: center;
-	box-shadow: 1px 5px 10px 5px #888888;
-	" >
-		<div class="row justify-content-center h-100">
-			<div class="card w-25 my-auto shadow">
-				<div class="card-header text-center bg-primary text-white">
-					<h2>Login form</h2>
-				</div>
-				<div class="card-body">
-					<form>
-						<div class="form-group" style="padding: 5px;">
-							<label for="email">Email</label>
-							<input type="email" id="email" class="form-control" name="email" />
-						</div>
-						<div class="form-group" style="padding: 5px;">
-							<label for="password">Password</label>
-							<input type="password" id="password" class="form-control" name="password" />
-						</div>
-						<div style="padding: 5px;">
-						<button id = "jsButtonSubmit" type="submit" class="btn btn-primary w-100" value="Login" name="">Login</button>
-						</div>
-					</form>
-					<form action="./registration.html" style="padding: 5px;">
-						<label for="registration">Don't have an account?</label>
-						<button type="submit" style="background-color: transparent; border: none; color: rgb(48, 149, 212);">Register</button>
-					 </form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<br/><br/><br/><br/><br/>
-
-<footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/img_bg_1.jpg);" role="contentinfo">
-	<div class="overlay"></div>
-	<div class="container">
-		<div class="row row-pb-md">
-			<div class="col-md-4 fh5co-widget">
-				<h3>A Little About fit-o-cracy</h3>
-				<p>Sticking to a regular exercise schedule isn't easy. After all, there are plenty of potential hindrances — time, boredom, injuries, self-confidence. But these issues don't need to stand in your way.</p>
-				<p><a class="btn btn-primary" href="./registration.html">SIGN UP</a></p>
-			</div>
-			<div class="col-md-8">
-				<h3>&nbsp;helpful links</h3>
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Cardio</a></li>
-						<li><a href="#"> Weight training</a></li>
-						<li><a href="#">Yoga</a></li>
-						<li><a href="#">Running</a></li>
-				  </ul>
-			  </div>
-
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<ul class="fh5co-footer-links">
-						<li><a href="diet-plan.html">Diet-plan</a></li>
-						<li><a href="BMI.html">BMI-calculator</a></li>
-						<li>&nbsp;</li>
-					</ul>
-				</div>
-
-				<div class="col-md-4 col-sm-4 col-xs-6">
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Tips</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Feedback</a></li>
-						<li>&nbsp;</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="row copyright">
-			<div class="col-md-12 text-center">
-				<p><small class="block">made by team <span style="color: #EAE9E9">FIT-O-CRACY</span></small>
-				</p>
-				<p>
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p><small class="block">made by team <span style="color: #EAE9E9">FIT-O-CRACY</span></small>
+					</p>
+					<p>
 					<ul class="fh5co-social-icons">
-						
+
 					</ul>
-				</p>
+					</p>
+				</div>
 			</div>
+
 		</div>
+	</footer>
 
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-</footer>
 
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<script src="./js/main/login.js" type="module"></script>
 
-<div class="gototop js-top">
-	<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-</div>
-
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
-<!-- Stellar Parallax -->
-<script src="js/jquery.stellar.min.js"></script>
-<!-- Carousel -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- countTo -->
-<script src="js/jquery.countTo.js"></script>
-<!-- Magnific Popup -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/magnific-popup-options.js"></script>
-<!-- Main -->
-<script src="js/main.js"></script>
-<script src="./js/main/login.js"  type="module"></script>
-
-<script src="./js/main/authUpdate.js"></script>
+	<script src="./js/main/authUpdate.js"></script>
 
 
 </body>
+
 </html>

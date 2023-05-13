@@ -27,6 +27,64 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<style>
+		.container {
+			width: fit-content;
+			margin: 0 auto;
+			padding-top: 30px;
+		}
+		
+		.reg_form {
+			background: #F85A16;
+			padding: 10px;
+			color: white;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 5px;
+			width: 100%;
+   		}
+		
+		h1 {
+			margin: 0;
+			text-align: center;
+			color: white;
+		}
+		body {
+		  font-family: Arial, sans-serif;
+		  
+		}
+	  
+		form {
+		  max-width: 500px;
+		  margin: 0 auto;
+		}
+	  
+		label {
+		  display: block;
+		  margin-bottom: 10px;
+		  font-weight: bold;
+		}
+	  
+		input[type="text"] {
+		  width: 100%;
+		  padding: 5px;
+		  margin-bottom: 15px;
+		}
+	  
+		input[type="submit"] {
+		  background-color: #F85A16;
+		  color: white;
+		  padding: 10px 20px;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+	  
+		input[type="submit"]:hover {
+		  background-color: #F85A16;
+		}
+		</style>
   </head>
   <body>
 
@@ -65,6 +123,7 @@
 				          </ul>
 				        </li>
 					    <li><a href="contact.html">Contact</a></li>
+						<li><a href="generatePlan.html">AI Plan</a></li>
 						<li class="active"><a  id="loginTextJS"  href="login.html">Login</a></li>
 				      </ul>
 					</div>
@@ -74,17 +133,16 @@
 		</div>
 	</nav>  
 	  
-    <div class="container" style=" 
-	border: 1px solid #3a3a3a62;
-	margin: 175px;
-	align-content: center;
-	box-shadow: 1px 5px 10px 5px #888888;
-	">
-      <div class="row justify-content-center h-100">
-			<div class="card w-25 my-auto shadow">
-				<div class="card-header text-center bg-primary text-white">
-            <h1>Registration Form</h1>
-          </div>
+    <div >
+		<div class="container">
+			<div class="reg_form">
+				<h1>Registration</h1>
+			</div>
+			<!-- rest of the form code -->
+		</div>
+		  
+		  
+		  
           <div class="panel-body">
             <form >
               <div class="form-group">
@@ -168,11 +226,8 @@
 				<button  type="submit" style="background-color: transparent; border: none; color: rgb(48, 149, 212);">Login</button>
 				</form>
           </div>
-         
-        </div>
-      </div>
-    </div>
-	  </div>
+    	</div>
+	</div>
 	  
 	  <br/><br/><br/><br/><br/>
 
